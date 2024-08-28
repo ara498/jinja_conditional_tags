@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>jinja_conditional_tags using if_condition</h1>
+    {% if b > a %}
+    <h1>{{a}} is greaterthan b </h1>
+    {% endif %} -->
+
+
+    <!-- <h1>by using simple if_else condition</h1> 
+    {% if a > b  %}
+    <h1>{{a}} is greater than b </h1>
+    {% else %}
+    <h1>{{b}} is greater than a </h1>
+    {% endif %}
+     -->
+
+    <!-- <h1> Example of if_elif condition</h1>
+    {% if a > b and a > c %}
+    <h1>{{a}} is greater than b and c</h1>
+    {% elif b > c %}
+    <h1>{{b}} is greater than a and c</h1>
+    {% else %}
+    <h1>{{c}} is greater than a and c</h1>
+    {% endif %} -->
+
+
+    <center> 
+    <h1> Example of Nested_if condition </h1>
+    {% if a > b %}
+    {% if a > C %}
+    <h1>{{a}} is greaterthan b and c </h1>
+    {% else %}
+    <h1>{{c}} is greaterthan a and c </h1>
+    {% endif %}
+    {% else %}
+    {% if b > c %}
+    <h1>{{b}} is greaterthan a and c </h1>
+    {% else %}
+    <h1>{{c}} is greaterthan a and b </h1>
+    {% endif %}
+    {% endif %}
+    </center>
+
+</body>
+</html>
